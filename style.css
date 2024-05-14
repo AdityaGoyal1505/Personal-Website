@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Josefin Sans",sans-serif;
+    background-color: aquamarine;
+
+}
+
+.my-divs{
+    height: 100vh;
+    overflow: hidden;
+}
+
+a{
+    visibility: hidden;
+    position: absolute;
+}
+
+.arrow-down:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top:30rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid rgba(255,255,255,0.3);
+    border-bottom: 4px solid rgba(255,255,255,0.3);
+
+    transform: rotate(45deg);
+    cursor: pointer;
+
+}
+
+.arrow-up:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top:30rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid rgba(255,255,255,0.3);
+    border-bottom: 4px solid rgba(255,255,255,0.3);
+    transform: rotate(225deg);
+    cursor: pointer;
+
+}
+
+#div1{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+#div1 h1{
+    text-shadow: 1px 1px 1px rgb(183, 183, 183);
+    padding: 20px;
+}
+
+#div1 i{
+    text-shadow: 1px 1px 1px rgb(183, 183, 183);
+    padding-bottom: 20px;
+}
+
+#div1 p{
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 1.5rem;
+}
+
+.img-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.img-div div img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(35, 35, 35, 0.326);
+    border: 0.1px solid rgba(255, 255, 255, 0.116);
+    filter:drop-shadow(3px 3px 3px rgba(255, 255, 255, 0.21));
+}
+
+#div2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url('Computer.webp');
+    background-size: cover;
+    color: aliceblue;
+}
+
+#ed{
+    height: 200px;
+    margin-top: 10px;
+}
+#div2 div{
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    width: 100vw;
+    padding: 10%;
+
+}
+#div2 div h1{
+    margin-top: 20%;
+
+}
+
+#div2 div p{
+    line-height: 2;
+    letter-spacing: 0.5px;
+}
+
+#div3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0px 10% 0px;
+}
+#skill_title{
+    margin-top: -20px;
+    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+}
+#skill_title h1{
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.445),rgba(190, 186, 186, 0.445));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 120px;
+    
+}
+.skill-wrap{
+    margin-top: -10px;
+    display: inline;
+}
+.skills h3{
+    padding-bottom: 10px;
+}
+.skills p{
+    padding:0px;
+}
+.skills{
+    backdrop-filter: blur(100%);
+    margin-top: 2px;
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 15px 15px 80px rgba(255, 255, 255, 0.8);
+    width: 15%;
+    margin: 5px 5px 20px;
+    padding: 25px;
+    height: auto;
+    display: inline-block;
+    font-size: 10px;
+}
+
+.skills img{
+    width:50%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+
+#div4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: url('Computer.webp') ;
+    background-size: cover;
+}
+
+.overlay{
+    background-color: rgba(0, 0, 0, 0.626);
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#div4 h1,#div4 p{
+    color: white;
+    padding: 15px;
+}
+
+form{
+    padding: 10px;
+}
+form input,form textarea,form button{
+    font-family: inherit;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+form input:focus{
+    outline: none;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+form button{
+    width:620px;
+    outline: none;
+    transition: background-color 0.3s ease-in;
+}
+form button:hover{
+    background-color: rgba(96, 104, 255, 0.92);
+    color: white;
+}
+
+::-webkit-scrollbar{
+    width:3px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 0, 0, 0.98);
+    border-radius: 5px;
+}
